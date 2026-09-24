@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#050507">
+
+    <meta name="description"
+          content="THOMAS — وقتی برق میره، ایده‌ها روشن می‌شن.">
+
+    <title>THOMAS — System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+	<body>
+		
+		<div class="electron-layer" id="electronLayer" aria-hidden="true"></div>
+
+<div class="spark-layer" id="sparkLayer" aria-hidden="true"></div>
+
+    <!-- =========================================
+         THOMAS HANGING LAMP
+    ========================================== -->
+
+    <div
+        class="hanging-lamp"
+        id="hangingLamp"
+        aria-hidden="true">
+
+        <div class="lamp-wire"></div>
+
+        <div class="lamp-fixture">
+
+            <div class="lamp-bulb"></div>
+
+        </div>
+
+        <div class="lamp-glow"></div>
+
+    </div>
+
+
+    <!-- =========================================
+         THOMAS CUSTOM CURSOR
+    ========================================== -->
+
+    <div
+        class="thomas-cursor"
+        id="thomasCursor"
+        aria-hidden="true">
+
+        <span class="cursor-core"></span>
+
+    </div>
+    <!-- =========================================
+         THOMAS HERO
+    ========================================== -->
+
+    <main class="thomas-hero">
+
+        <!-- پس‌زمینه -->
+        <div class="hero-background"></div>
+
+        <!-- نور محیط -->
+        <div class="ambient-glow"></div>
+		
+
+
+        <!-- =====================================
+             ELECTRON SYSTEM
+        ====================================== -->
+
+   
+
+
+        <!-- =====================================
+             FIRE SPARK SYSTEM
+        ====================================== -->
+
+       
+
+        <!-- =====================================
+             MAIN THOMAS TITLE
+        ====================================== -->
+<div
+    class="thomas-title"
+    id="thomasTitle"
+    aria-label="THOMAS">
+
+    <span class="thomas-letter">
+        <span class="energy-coil"></span>
+        T
+    </span>
+
+    <span class="thomas-letter">
+        <span class="energy-coil"></span>
+        H
+    </span>
+
+    <span class="thomas-letter">
+        <span class="energy-coil"></span>
+        O
+    </span>
+
+    <span class="thomas-letter">
+        <span class="energy-coil"></span>
+        M
+    </span>
+
+    <span class="thomas-letter">
+        <span class="energy-coil"></span>
+        A
+    </span>
+
+    <span class="thomas-letter">
+        <span class="energy-coil"></span>
+        S
+    </span>
+
+</div>
+		<!-- =========================================
+     THOMAS EMERGENCY RAILS
+========================================= -->
+
+<div class="emergency-rails" aria-hidden="true">
+
+    <div class="emergency-rail emergency-rail-left">
+        <span class="rail-light"></span>
+    </div>
+
+    <div class="emergency-rail emergency-rail-right">
+        <span class="rail-light"></span>
+    </div>
+
+</div>
+
+
+
+        <!-- =====================================
+             HERO CONTENT
+        ====================================== -->
+
+        <section class="hero-content">
+
+            <div class="system-id">
+
+                <span class="id-light"></span>
+
+
+                THOMAS SYSTEM
+
+                <span class="id-divider">/</span>
+
+                2026
+
+            </div>
+
+
+            <h1 class="hero-slogan">
+
+                وقتی برق میره،
+
+                <span>
+                    ایده‌ها روشن می‌شن.
+                </span>
+
+            </h1>
+
+
+            <button
+                class="system-button"
+                id="systemButton"
+                type="button">
+
+                <span class="button-light"></span>
+
+                روشن کردن سیستم
+
+            </button>
+			<button
+    class="emergency-button"
+    id="emergencyButton"
+    type="button"
+    aria-label="Emergency Mode">
+
+    <span class="emergency-switch">
+
+        <span class="emergency-switch-track">
+            <span class="emergency-switch-knob"></span>
+        </span>
+
+    </span>
+
+    <span class="emergency-button-text">
+        EMERGENCY MODE
+    </span>
+
+</button>
+
+			
+			
+<!-- =====================================
+     EMERGENCY CONTROL
+===================================== -->
+<button
+    class="emergency-button"
+    id="emergencyButton"
+    type="button">
+
+    <span class="emergency-button-light"></span>
+
+    <span class="emergency-button-text">
+        EMERGENCY
+    </span>
+
+</button>
+			
+			
+
+        </section>
+
+
+        
+<!-- SYSTEM STATUS -->
+
+<div class="system-status">
+
+    <div class="status-box">
+
+        <span class="status-name">
+            POWER
+        </span>
+
+        <span class="status-dot"></span>
+
+        <span class="status-value">
+            ONLINE
+        </span>
+
+    </div>
+
+
+    <div class="status-box">
+
+        <span class="status-name">
+            SIGNAL
+        </span>
+
+        <span class="status-dot"></span>
+
+        <span class="status-value">
+            STABLE
+        </span>
+
+    </div>
+
+
+    <div class="status-box">
+
+        <span class="status-name">
+            CORE
+        </span>
+
+        <span class="status-dot"></span>
+
+        <span class="status-value">
+            100%
+        </span>
+
+    </div>
+
+
+    <div class="status-box">
+
+        <span class="status-name">
+            SERVER
+        </span>
+
+        <span class="status-dot"></span>
+
+        <span
+            class="status-value"
+            id="serverTime">
+            --:--:--
+        </span>
+
+    </div>
+
+</div>
+
+        <!-- =====================================
+             INDUSTRIAL UI DETAILS
+        ====================================== -->
+
+        <div class="ui-label ui-top-left">
+            SYSTEM / 01
+        </div>
+
+        <div class="ui-label ui-top-right">
+            INDUSTRIAL CORE
+        </div>
+
+        <div class="ui-label ui-bottom-left">
+            POWER IS OPTIONAL.
+        </div>
+
+        <div class="ui-label ui-bottom-right">
+            IDEAS ARE NOT.
+        </div>
+
+
+        <div class="industrial-line industrial-left"></div>
+
+        <div class="industrial-line industrial-right"></div>
+
+    </main>
+
+</div>
+    
+		<!-- THOMAS GENERATOR -->
+
+		
+<section class="thomas-generator" id="thomasGenerator">
+
+    <div class="generator-core">
+
+        <div class="generator-glass"></div>
+
+        <div class="generator-blades">
+
+            <span class="generator-blade blade-1"></span>
+            <span class="generator-blade blade-2"></span>
+            <span class="generator-blade blade-3"></span>
+            <span class="generator-blade blade-4"></span>
+            <span class="generator-blade blade-5"></span>
+            <span class="generator-blade blade-6"></span>
+
+        </div>
+
+        <div class="generator-center">
+            <span>THOMAS</span>
+            <small>POWER CORE</small>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>
